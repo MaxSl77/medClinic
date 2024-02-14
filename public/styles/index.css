@@ -1,0 +1,451 @@
+@import '/normalize.css';
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+.header {
+  background-color: #99d9d9;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 300px;
+  height: 180px;
+}
+.header__block-wrapper {
+  margin-left: -100px;
+}
+
+.nav-main__link {
+  font-family: OpenSans;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+  text-transform: uppercase;
+}
+.nav-main__link:hover {
+  opacity: 0.6;
+}
+
+.performance {
+  position: relative;
+  background-image: url("/images/orsoDoctor1.jpg");
+  text-align: center;
+  background-size: cover;
+}
+.performance::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0.6;
+  z-index: 1;
+}
+.performance__wrapper {
+  padding: 60px 0;
+}
+.performance__heading {
+  z-index: 2;
+  position: relative;
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: OpenSans;
+  margin: 30px 0;
+}
+.performance__secondHeading {
+  z-index: 2;
+  position: relative;
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: OpenSans;
+  margin-bottom: 30px;
+}
+.performance__text {
+  z-index: 2;
+  position: relative;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: OpenSans;
+  margin-bottom: 30px;
+}
+.performance__button {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  border: 1px solid #99d9d9;
+  border-radius: 10px;
+  background: #99d9d9;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.performance__button:hover {
+  opacity: 0.6;
+}
+
+.services {
+  display: flex;
+  background-color: #99d9d9;
+  flex-wrap: wrap;
+}
+.services__name {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: OpenSans;
+  margin: 15px auto;
+}
+.services__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__table {
+  margin: 20px;
+}
+.services__table-heading {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: OpenSans;
+  padding-bottom: 15px;
+}
+.services__table-item {
+  font-weight: 400;
+  font-family: OpenSans;
+  padding-bottom: 15px;
+}
+
+.doctor {
+  background-color: #99d9d9;
+  text-align: center;
+}
+.doctor__nameSection {
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: OpenSans;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.doctor__card {
+  z-index: 2;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 375px;
+  width: 350px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 70px;
+}
+.doctor__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+.doctor__image {
+  height: 140px;
+  width: 140px;
+  border-radius: 55%;
+  padding: 3px;
+  background: #fff;
+  box-shadow: 0 -1px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.doctor__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.doctor__name-doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.doctor__name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+.doctor__position {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 5px;
+}
+.doctor__doctor-about {
+  display: flex;
+  text-align: center;
+  color: #444;
+  margin-bottom: 5px;
+}
+.doctor__doctor-button {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 290px;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #99d9d9;
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .doctor__card {
+    margin: 10px auto;
+  }
+}
+.equipments {
+  position: relative;
+  background-image: url("/images/orsoMachine.jpg");
+  text-align: center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.equipments::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0.6;
+  z-index: 1;
+}
+.equipments__nameSection {
+  z-index: 2;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: OpenSans;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.equipments__card {
+  z-index: 2;
+  display: none;
+  position: relative;
+  background-color: #99d9d9;
+  border-radius: 20px;
+  height: 375px;
+  width: 350px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 70px;
+}
+.equipments__card-content {
+  padding: 30px;
+}
+.equipments__image {
+  width: 200px;
+}
+.equipments__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.equipments__name-equipments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+}
+.equipments__name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+.equipments__equipments-about {
+  display: flex;
+  text-align: center;
+  color: #444;
+}
+@media (max-width: 500px) {
+  .equipments .equipments__card {
+    margin: 10px auto;
+  }
+}
+
+.equipments-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+.visible {
+  display: block;
+}
+
+.arrow {
+  z-index: 2;
+  position: absolute;
+  border: solid black;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+  top: 50%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  left: auto;
+  right: 30px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 30px;
+}
+
+.promotion {
+  position: relative;
+  background-image: url("/images/orsoLab.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.promotion::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0.6;
+  z-index: 1;
+}
+.promotion__nameSection {
+  z-index: 2;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: OpenSans;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.promotion__card {
+  z-index: 2;
+  display: none;
+  position: relative;
+  background-color: #99d9d9;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 70px;
+}
+.promotion__card-content {
+  padding: 30px;
+}
+.promotion__image {
+  width: 200px;
+}
+.promotion__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.promotion__name-promotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+}
+.promotion__name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+.promotion__promotion-about {
+  display: flex;
+  text-align: center;
+  color: #444;
+}
+@media (max-width: 500px) {
+  .promotion .promotion__card {
+    margin: 10px auto;
+  }
+}
+
+.promotion-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+.visible {
+  display: block;
+}
+
+.arrow {
+  z-index: 2;
+  position: absolute;
+  border: solid black;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+  top: 50%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  left: auto;
+  right: 30px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 30px;
+}
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */

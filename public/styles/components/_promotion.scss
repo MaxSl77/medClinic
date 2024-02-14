@@ -1,0 +1,154 @@
+.promotion {
+    position: relative;
+    background: {
+        image: url('/images/orsoLab.jpg');
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    text-align: center;
+    background-size: cover;
+    padding-bottom: 50px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $white;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    &__nameSection {
+        z-index: 2;
+        position: relative;
+        font: {
+            size: 24px;
+            weight: 700;
+            family: OpenSans;
+        }
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__card {
+        z-index: 2;
+        display: none;
+        position: relative;
+        background-color: $primery-color;
+        border-radius: 20px;
+        //height: 375px;
+        width: 350px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 70px;
+    }
+
+    //&__card .active {
+    //    display: block;
+    //}
+
+    &__card-content {
+        //display: flex;
+        //flex-direction: column;
+        //align-items: center;
+        padding: 30px;
+    }
+
+    &__image {
+        //height: 150px;
+        width: 200px;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &__name-promotion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px auto;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #222;
+    }
+
+
+    &__promotion-about {
+        display: flex;
+        text-align: center;
+        color: #444;
+        //margin-bottom: 5px;
+    }
+
+    @media (max-width: 500px) {
+        .promotion__card {
+            margin: 10px auto;
+        }
+    }
+}
+
+.promotion-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.visible {
+    display: block;
+}
+
+.arrow {
+    z-index: 2;
+    position: absolute;
+    border: solid black;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+    top: 50%;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    left: auto;
+    right: 30px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 30px;
+}
+
+//#btn-prev, #btn-next {
+//    z-index: 2;
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    height: 100%;
+//    width: 50px;
+//    background-color: black;
+//    opacity: 0.2;
+//    cursor: pointer;
+//    transition: opacity .2s ease-in-out;
+//}
+//
+//#btn-prev:hover, #btn-next:hover {
+//    opacity: 1;
+//}
+//
+//#btn-next {
+//    left: auto;
+//    right: 0;
+//}

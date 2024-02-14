@@ -1,0 +1,40 @@
+.services {
+    display: flex;
+    background-color: $primery-color;
+    flex-wrap: wrap;
+
+    &__name {
+        font: {
+            size: 24px;
+            weight: 700;
+            family: $primery-font;
+        };
+        margin: 15px auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+     &__table {
+        margin: 20px;
+    }
+
+    &__table-heading {
+        font: {
+            size: 18px;
+            weight: 700;
+            family: $primery-font;
+        };
+        padding-bottom: 15px;
+    }
+
+    &__table-item {
+        font: {
+            weight: 400;
+            family: $primery-font;
+        };
+        padding-bottom: 15px;
+    }
+}

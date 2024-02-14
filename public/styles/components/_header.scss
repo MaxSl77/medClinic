@@ -1,0 +1,37 @@
+.header {
+    background-color: $primery-color;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 300px;
+        height: 180px;
+    }
+
+    &__block-wrapper {
+        margin-left: -100px;
+    }
+}
+
+.nav-main {
+    &__link {
+        font: {
+            family: $primery-font;
+            weight: bolder;
+            size: 20px;
+        }
+
+        text-decoration: none;
+        color: $white;
+        margin: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}

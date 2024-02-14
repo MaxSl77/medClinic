@@ -1,0 +1,14 @@
+@import '/normalize.css';
+@import 'variables';
+@import 'components/header';
+@import 'components/orsoPerformance';
+@import 'components/services';
+@import 'components/doctors';
+@import 'components/equipments';
+@import 'components/promotion';
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 16px;
+}
