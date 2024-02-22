@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/styles/index.js" defer></script>
     <title>@yield('title')</title>
-
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
 {{--<!-- Yandex.Metrika counter -->--}}
