@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
+    <link href="/admin/dist/css/colorbox.css" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -66,7 +65,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon far fa-newspaper"></i>
                             <p>
-                                Блог
+                                Статьи
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -77,7 +76,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link">
+                                <a href="{{ route('post.create') }}" class="nav-link">
                                     <p>Добавить статью</p>
                                 </a>
                             </li>
@@ -93,12 +92,12 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link">
+                                <a href="{{ route('category.index') }}" class="nav-link">
                                     <p>Все ктегории</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link">
+                                <a href="{{ route('category.create') }}" class="nav-link">
                                     <p>Добавить категорию</p>
                                 </a>
                             </li>
@@ -156,9 +155,12 @@
 <!-- AdminLTE App -->
 <script src="/admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/admin/dist/js/demo.js"></script>
+{{--<script src="/admin/dist/js/demo.js"></script>--}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="https://cdn.tiny.cloud/1/jxsqeq85qzdwuqqqruya91jqsrhqtxykhxtks6sn0t1kn69g/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script src="/admin/dist/js/pages/dashboard.js"></script>
 <script src="/admin/admin.js"></script>
+<script type="text/javascript" src="/admin/dist/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
 </body>
 </html>
